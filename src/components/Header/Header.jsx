@@ -16,11 +16,11 @@ export default class Header extends React.Component{
     }
 
     navigateToHome(){
-        this.setState({navigateToHome:true})
+        this.setState({navigateToHome:true,navigateToBag:false})
     }
 
     navigateToBag(){
-        this.setState({navigateToBag:true})
+        this.setState({navigateToBag:true,navigateToHome:false})
     }
 
     render(){
@@ -44,7 +44,7 @@ export default class Header extends React.Component{
                 </div>
             </div>
             {this.state.navigateToHome && <Redirect to='/MHTShirt'></Redirect>}
-            {/* {this.state.navigateToBag && !window.location.includes('bag') && <Redirect to='/bag'></Redirect>} */}
+            {this.state.navigateToBag && !window.location.toString().includes('bag') && <Redirect to='/bag'></Redirect>}
         </>
     }
 }

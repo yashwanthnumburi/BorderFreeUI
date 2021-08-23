@@ -37,21 +37,21 @@ export default class RightContainer extends React.Component{
                 <div>Price Details</div>
                 <div className='priceItem'>
                     <span>Total MRP</span>
-                    <span style={{'float':'right'}}>${this.state.price}</span>
+                    <span style={{'float':'right'}}>Rs.{this.state.price}</span>
                 </div>
                 <div className='priceItem'>
                     <span>Discount on MRP</span>
-                    <span style={{'float':'right'}}>${this.state.discount}</span>
+                    <span style={{'float':'right'}}>Rs.{this.state.discount}</span>
                 </div>
                 <div className='priceItem'>
                     <span>Convenience Fee</span>
-                    <span style={{'float':'right'}}>{this.state.convFee}</span>
+                    <span style={{'float':'right'}}>Rs.{this.state.convFee}</span>
                 </div>
             </div>
             <hr style={{'borderBottom':'2px solid red'}}></hr>
             <div className='totalPrice'>
                 <span>Total Amount</span>
-                <span style={{'float':'right'}}>{this.state.totalPrice}</span>
+                <span style={{'float':'right'}}>Rs.{this.state.totalPrice}</span>
             </div>
             <button className='btnOrder'>PLACE ORDER</button>
         </>

@@ -4,11 +4,11 @@
     height:80px;
     position:fixed;
     width:100%;
-    min-width: 1000px;
     top:0px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
     z-index: 50000;
+    min-width:1027px;
 }
 
 .companyName{
@@ -45,6 +45,10 @@
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+   
 }
 
 .navLink:nth-child(2):hover{
