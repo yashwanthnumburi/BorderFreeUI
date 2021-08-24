@@ -31,7 +31,7 @@ export default class ProductDetails extends React.Component{
     }
 
     showModal(){
-        return <DialogueBox img={this.props.itemDetails.Images[0]}></DialogueBox>
+        return <DialogueBox img={this.props.itemDetails.Images[0]} text={'Item Added'}></DialogueBox>
     }
 
     getExpectedDeliveryMessage(){

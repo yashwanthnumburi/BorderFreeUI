@@ -20,7 +20,7 @@ export default class Header extends React.Component{
     }
 
     navigateToBag(){
-        this.setState({navigateToBag:true,navigateToHome:false})
+        this.props.bagCount>0 && this.setState({navigateToBag:true,navigateToHome:false})
     }
 
     render(){

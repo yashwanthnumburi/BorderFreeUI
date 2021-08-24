@@ -9,7 +9,8 @@ export default class DialogueBox extends React.Component{
         return <>
             <div className='dialogueBox'>
                 <div>
-                <img className='dialogueImg' src={this.props.img}/>Item Added 
+                {this.props.img && <img className='dialogueImg' src={this.props.img}/>}
+                {this.props.text}
                 </div>
             </div>
         </>
